@@ -15,10 +15,10 @@
     * elements should stack vertically when the window is small
     * upload the links for: (1)this project's repo and (2)the video recording-->
 </head>
-    <!-------------------------------------->
+
 <body>
-    <Header>Armenian Recipes</Header>
-    <h1 class="text-dark">Weclome to Armenian Recipes!</h1>
+
+    <h1 class="text-dark text-center m-3 mt-5">Weclome to Armenian Recipes!</h1>
 
     <!--NAVBAR:-->
     <ul class="nav justify-content-end">
@@ -26,42 +26,75 @@
             <a class="nav-link active" href="index.html">Home</a>
             <!--i changed the placeholder to "index.html"-->
         </li>
-    <!-------------------------------------->
+
         <li class="nav-item">
-            <a class="nav-link" href="gatah.html">Gatah Recipe</a>
+            <a class="nav-link" href="gata.html">Gata Recipe</a>
+            <!--changed the placeholder to "gatah.html"-->
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
             <!--changed the placeholder to "gatah.html"-->
         </li>
     </ul>
 
-    <!--RESPONSIVE GRID:-->
-    <div class="container text-center">
-        <div class="row justify-content-md-center">
-            <div class="col col-lg-6">
-                1 of 3
-            </div>
-            <div class="col-lg-3">
-                Variable width content
-            </div>
-            <div class="col col-lg-3">
-                3 of 3
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                1 of 3
-            </div>
-            <div class="col-md-auto">
-                Variable width content
-            </div>
-            <div class="col col-lg-2">
-                3 of 3
-            </div>
-        </div>
+    <!--HERO-->
+    <div>
+        <img class="img-fluid" src="images/armenian-flag-1800x500.jpg"
+            alt="Armenian flag with three stripes colored red, blue, and apricot orange">
     </div>
+
+    <!--RECIPE HEADER-->
+    <h2 class="text-center p-4">Try These Recipes:</h2>
+
+    <!--RESPONSIVE GRID:-->
+    <div class="container">
+        <div class="row row-cols-1 row-cols-lg-3 g-3 m-3 pt-3">
+            <!--"g-3" is a gutter of 3, 
+            "m-3" is a margin of 3, 
+            and "pt-3" is a padding-top of 3
+            -->
+
+            <div class="col-sm">
+                <!--CARD LINKS INSIDE RESPONSIVE GRID:-->
+                <div class="card h-100 shadow-lg"> <!--making all cards the same height (h-100)-->
+                    <img src="images/Armenian_gata_with_layers.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Gata</h5>
+                        <p class="card-text">A leavened, cheesy bread called Gata</p>
+                        <a href="gata.html" class="btn btn-primary">Try this recipe</a>
+                    </div> <!--closing of card body-->
+                </div> <!--closing of card 1-->
+            </div> <!--closing of column element-->
+
+            <div class="col-sm">
+                <div class="card h-100 shadow-lg">
+                    <img src="images/Lahmajoun_(armenian)_-_2014_-_1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lahmajun</h5>
+                        <p class="card-text">Tomato, meat, and spices on top of a soft and crispy dough</p>
+                        <a href="#" class="btn btn-primary">Try this recipe</a>
+                    </div> <!--closing of card body-->
+                </div> <!--closing of card 2-->
+            </div> <!--closing of column element-->
+
+            <div class="col-sm">
+                <div class="card h-100 shadow-lg">
+                    <img src="images/Mantapur.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Manti</h5>
+                        <p class="card-text">Armenian dumplings - Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary">Try this recipe</a>
+                    </div> <!--closing of card body-->
+                </div> <!--closing of card 3-->
+            </div> <!--closing of column element-->
+        </div> <!--closing of row div-->
+    </div> <!--closing of container-->
 
     <!--jquery because we need it for some bootstrap:-->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
