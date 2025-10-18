@@ -18,12 +18,19 @@
 
 <body>
 
-    <h1 class="text-dark text-center m-3 mt-5">Thanks for Visiting!</h1>
+    <h1 class="text-center m-3 mt-5">Thanks for Visiting!</h1>
+        <!--"text-center" centers the text
+        "m" means margin
+        "mt" means margin-top
+    -->
 
     <!--NAVBAR:-->
-    <ul class="nav justify-content-end">
+    <ul class="nav justify-content-end"> <!--"justify-content" changes where items are placed 
+        in the flexbox - "end" means I have them at the end of the flexbox, which is why they're 
+        sitting on the right side of my screen-->
         <li class="nav-item">
             <a class="nav-link active" href="index.html">Home</a>
+            <!--i changed the placeholder to "index.html"-->
         </li>
 
         <li class="nav-item">
@@ -37,10 +44,11 @@
 
     <!--START OF CONTAINER-->
     <div class="container">
-        <div class="row row-cols-1 row-cols-lg-2">
+        <div class="row row-cols-1 row-cols-lg-2"> <!--one column for small screens, 2 for large-->
             <div class="col">
                 <!--DIV HOLDING THE H2 AND THE PARAGRAPH:-->
                 <h2 class="text-center m-3 p-3">About Armenian Recipes</h2>
+                <!--"m-3" is margin of 3, "p-3" is padding of 3. sizing goes from 0-5 and auto-->
                 <div class="m-3 p-3">
                     <p class="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Reiciendis, numquam ex, deserunt non ducimus amet, maiores excepturi
@@ -56,9 +64,11 @@
             <!--DIV HOLDING THE FORM:-->
             <div class="col">
                 <h3 class="text-center m-3 p-3">Sign Up for Our Newsletter!</h2>
+                    <!--"m-3" is margin of 3, "p-3" is padding of 3. sizing goes from 0-5 and auto-->
                     <form>
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
+                                <!--"mb" means margin-bottom-->
                                 <label for="validationDefault01">First name</label>
                                 <input type="text" class="form-control" id="validationDefault01" required>
                             </div>
@@ -68,7 +78,8 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="col-md-6 mb-3">
+                            <div class="col-md-6 mb-3"> <!--"col-md-6" sets the length for the space 
+                                where you write text-->
                                 <label for="validationDefault03">Email</label>
                                 <input type="text" class="form-control" id="validationDefault03" required>
                             </div>

@@ -18,10 +18,16 @@
 
 <body>
 
-    <h1 class="text-dark text-center m-3 mt-5">Weclome to Armenian Recipes!</h1>
+    <h1 class="text-center m-3 mt-5">Weclome to Armenian Recipes!</h1>
+    <!--"text-center" centers the text
+        "m" means margin
+        "mt" means margin-top
+    -->
 
     <!--NAVBAR:-->
-    <ul class="nav justify-content-end">
+    <ul class="nav justify-content-end"> <!--"justify-content" changes where items are placed 
+        in the flexbox - "end" means I have them at the end of the flexbox, which is why they're 
+        sitting on the right side of my screen-->
         <li class="nav-item">
             <a class="nav-link active" href="index.html">Home</a>
             <!--i changed the placeholder to "index.html"-->
@@ -29,12 +35,10 @@
 
         <li class="nav-item">
             <a class="nav-link" href="gata.html">Gata Recipe</a>
-            <!--changed the placeholder to "gatah.html"-->
         </li>
 
         <li class="nav-item">
             <a class="nav-link" href="about.html">About</a>
-            <!--changed the placeholder to "gatah.html"-->
         </li>
     </ul>
 
@@ -43,9 +47,12 @@
         <img class="img-fluid" src="images/armenian-flag-1800x500.jpg"
             alt="Armenian flag with three stripes colored red, blue, and apricot orange">
     </div>
+    <!--"img-fluid means the image will scale with the parent element and be responsive to 
+    screen sizes"-->
 
     <!--RECIPE HEADER-->
     <h2 class="text-center p-4">Try These Recipes:</h2>
+    <!--"p-4" means padding of 4. sizing goes from 0-5 and auto-->
 
     <!--RESPONSIVE GRID:-->
     <div class="container">
@@ -57,8 +64,9 @@
 
             <div class="col-sm">
                 <!--CARD LINKS INSIDE RESPONSIVE GRID:-->
-                <div class="card h-100 shadow-lg"> <!--making all cards the same height (h-100)-->
-                    <img src="images/Armenian_gata_with_layers.jpg" class="card-img-top" alt="...">
+                <div class="card h-100 shadow-lg"> <!--"h-100" making all cards the same height (h-100)-->
+                    <img src="images/Armenian_gata_with_layers.jpg" class="card-img-top" 
+                    alt="Gata cut into diamonds and arranged in a radial pattern">
                     <div class="card-body">
                         <h5 class="card-title">Gata</h5>
                         <p class="card-text">A leavened, cheesy bread called Gata</p>
@@ -67,20 +75,24 @@
                 </div> <!--closing of card 1-->
             </div> <!--closing of column element-->
 
-            <div class="col-sm">
-                <div class="card h-100 shadow-lg">
-                    <img src="images/Lahmajoun_(armenian)_-_2014_-_1.jpg" class="card-img-top" alt="...">
+            <div class="col-lg">
+                <div class="card h-100 shadow-lg"> 
+                    <!--"h-100" making all cards the same height (h-100)-->
+                    <img src="images/Lahmajoun_(armenian)_-_2014_-_1.jpg" class="card-img-top" 
+                    alt="Lahmajun piled high on a table">
                     <div class="card-body">
                         <h5 class="card-title">Lahmajun</h5>
                         <p class="card-text">Tomato, meat, and spices on top of a soft and crispy dough</p>
                         <a href="#" class="btn btn-primary">Try this recipe</a>
+                        <!--"btn-primary" to add a button-->
                     </div> <!--closing of card body-->
                 </div> <!--closing of card 2-->
             </div> <!--closing of column element-->
 
             <div class="col-sm">
-                <div class="card h-100 shadow-lg">
-                    <img src="images/Mantapur.jpg" class="card-img-top" alt="...">
+                <div class="card h-100 shadow-lg"> 
+                    <!--"h-100" making all cards the same height (h-100)-->
+                    <img src="images/Mantapur.jpg" class="card-img-top" alt="Manti in a bowl">
                     <div class="card-body">
                         <h5 class="card-title">Manti</h5>
                         <p class="card-text">Armenian dumplings - Lorem ipsum dolor, sit amet
